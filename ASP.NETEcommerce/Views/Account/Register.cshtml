@@ -1,0 +1,136 @@
+﻿@model ASP.NETEcommerce.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<style>
+    /*
+    * Specific styles of register component
+    */
+    /*
+    * General styles
+    */
+    body, html {
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .card.card-container {
+        max-width: 350px;
+        padding: 40px 40px;
+    }
+
+    .card {
+        background-color: #F7F7F7;
+        /* just in case there no content*/
+        padding: 20px 25px 30px;
+        margin: 0 auto 25px;
+        margin-top: 50px;
+        /* shadows and rounded borders */
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .profile-img-card {
+        width: 96px;
+        height: 96px;
+        margin: 0 auto 10px;
+        display: block;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    .form-control {
+        margin-bottom: 4px;
+        height: 40px;
+    }
+
+    .btn.btn-register {
+        margin-top: 16px;
+        border-radius: 0px;
+        border: none;
+        background-color: #1de9b6;
+    }
+
+        .btn.btn-register:hover,
+        .btn.btn-register:active,
+        .btn.btn-register:focus {
+            background-color: #6effe8;
+            border: none;
+        }
+
+    .remember-me {
+        padding-left: 4px !important;
+    }
+
+    .forgot-password {
+        color: rgb(104, 145, 162);
+    }
+</style>
+
+<div class="container">
+    <div class="card card-container">
+        <img class="profile-img-card" src="https://www.designevo.com/res/templates/thumb_small/internet-and-laptop-icon.png" />
+        <p class="text-center"><b>Create a new account.</b></p>    
+        <form class="padding-top" method="post">
+            @Html.AntiForgeryToken()
+            @*<input type="email" class="form-control" placeholder="Email" value="@Model.Email" required autofocus>*@
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Email" })
+            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+            @*<input type="password" class="form-control" placeholder="Password" value="@Model.Password" required>*@
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
+            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+
+            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @placeholder = "Confirm Password" })
+            @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <button class="btn btn-primary btn-block btn-register">Register</button>
+        </form><!-- /form -->
+        <hr />
+        <p>
+            @Html.ActionLink("Forgot your password?", "ForgotPassword")
+        </p>
+    </div><!-- /card-container -->
+</div><!-- /container -->
+@*<h2>@ViewBag.Title.</h2>
+
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+        <h4>Create a new account.</h4>
+        <hr />
+        @Html.ValidationSummary("", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-default" value="Register" />
+            </div>
+        </div>
+    }*@
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
