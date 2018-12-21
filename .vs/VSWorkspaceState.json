@@ -1,6 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ASP.NETEcommerce",
+    "\\ASP.NETEcommerce\\Content",
+    "\\ASP.NETEcommerce\\Content\\css",
+    "\\ASP.NETEcommerce\\Content\\css\\Product",
+    "\\ASP.NETEcommerce\\Views",
+    "\\ASP.NETEcommerce\\Views\\Product"
   ],
+  "SelectedNode": "\\ASP.NETEcommerce",
   "PreviewInSolutionExplorer": false
 }

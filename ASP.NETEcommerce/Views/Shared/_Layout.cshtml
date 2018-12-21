@@ -31,7 +31,7 @@
                     }
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    </ul>
+                </ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
@@ -39,12 +39,10 @@
     <div>
         @*class="container body-content"*@
         @RenderBody()
-        <hr />
-        <footer class="container">
-            <p>&copy; @DateTime.Now.Year - ASP.NET E-Commerce</p>
-        </footer>
     </div>
-
+    <footer class="container footer">
+        <p class="text-center no-margin">&copy; @DateTime.Now.Year ASP.NET E-Commerce with <i class="fa fa-heart text-danger"></i> Secret</p>
+    </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

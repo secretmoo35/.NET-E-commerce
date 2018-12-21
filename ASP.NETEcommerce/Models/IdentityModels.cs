@@ -31,5 +31,7 @@ namespace ASP.NETEcommerce.Models
         }
 
         public DbSet<AddressModel> Addresses { get; set; }
+
+        public System.Data.Entity.DbSet<ASP.NETMVCEcommerce.Models.ProductModel> ProductModels { get; set; }
     }
 }

@@ -1,4 +1,8 @@
-﻿.padding-top {
+﻿.no-padding {
+    margin: 0px !important;
+}
+
+.padding-top {
     padding-top: 16px !important;
 }
 
@@ -12,6 +16,10 @@
 
 .padding-bottom {
     padding-bottom: 16px !important;
+}
+
+.no-margin{
+    margin: 0px !important;
 }
 
 .margin-top {
@@ -119,3 +127,16 @@
 }
 
 /* end nav bar style */
+
+/*footer*/
+.footer {
+    background-color: #35404f;
+    color: #878c94;
+    width: 100%;
+    padding: 32px;
+}
+/*legend footer*/
+
+.go-back {
+    color: #1de9b6 !important;
+}

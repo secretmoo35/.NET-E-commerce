@@ -1,0 +1,162 @@
+﻿
+@{
+    ViewBag.Title = "ViewProductDetail";
+}
+<link href="@Url.Content("~/Content/css/Product/ViewProductDetail.css")" rel="stylesheet" type="text/css" />
+<div class="padding-top padding-left padding-right padding-bottom">
+    <div class="card card-item padding-left padding-right">
+        <div class="row padding-left padding-right padding-bottom">
+            <div class="col-md-12">
+                <h3 class="product-name-header"><b><a class="go-back" onclick="goBack();" href="javascript:void(0);"><i class="fa fa-arrow-left margin-right" aria-hidden="true"></i></a> Men's Sweat Shirt</b></h3>
+                <hr />
+            </div>
+            <div class="col-sm-12 col-md-5 text-center">
+                <img class="product-image-overview" src="http://bestjquery.com/tutorial/product-grid/demo11/images/img-5.jpg">
+            </div>
+            <div class="col-sm-12 col-md-7">
+                <h3>Men's Sweat Shirt</h3>
+                <p class="product-code">Code: 11011001</p>
+                <div class="start">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <label class="text-review">(123 reviews)</label>
+                </div>
+                <h2 class="product-price">$11<span class="product-price-decimals">.00</span> - $15<span class="product-price-decimals">.00</span></h2>
+                <div class="product-detail padding-bottom">
+                    <p>
+                        With its lightweight material, the Linen Blazer makes for the perfect trans-seasonal layering piece. Pairs perfectly with our Hayman Short for Summer. Lightweight linen jacket, Button- through fastening, Half lined double button, Single chest pocket, Twin hip pockets, Button - through cuffs, Notch lapel and single back vent, Tailored for a regular fit
+                    </p>
+                </div>
+                <div class="product-option">
+                    <div class="row">
+                        <div class="col-md-4 padding-bottom">
+                            <select class="form-control">
+                                <option value="">Color</option>
+                                <option value="Black">Black</option>
+                                <option value="Blue">Blue</option>
+                                <option value="Brown">Brown </option>
+                                <option value="White">White</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 padding-bottom">
+                            <select class="form-control">
+                                <option value="">Size</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 padding-bottom">
+                            <select class="form-control">
+                                <option value="">Qty</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3 </option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row padding-top">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-primary">
+                                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Add to Cart
+                            </button>
+                            <button type="button" class="btn btn-default">
+                                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Add to Wishlist
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*Related products*@
+
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="text-uppercase padding-top padding-bottom"><span class="highlight">Related </span> Products</h4>
+            <div class="card card-item padding-top padding-bottom padding-left padding-right">
+                <div class="row">
+                    <div class="col-xs-12 col-md-2">
+                        <div class="product-grid">
+                            <div class="product-grid-image">
+                                <a href="/Product/ViewProductDetail">
+                                    <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo11/images/img-1.jpg">
+                                    <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo11/images/img-2.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="javascript:void(0);" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="javascript:void(0);" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                    <li><a href="javascript:void(0);" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                                <a href="javascript:void(0);" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="/Product/ViewProductDetail">Men's Sweat Shirt</a></h3>
+                                <div class="price">$11.00 - $15.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-2">
+                        <div class="product-grid">
+                            <div class="product-grid-image">
+                                <a href="/Product/ViewProductDetail">
+                                    <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo11/images/img-3.jpg">
+                                    <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo11/images/img-4.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="javascript:void(0);" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="javascript:void(0);" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                    <li><a href="javascript:void(0);" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                                <a href="javascript:void(0);" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="/Product/ViewProductDetail">Women's Shirt</a></h3>
+                                <div class="price">$10.00 - $12.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-2">
+                        <div class="product-grid">
+                            <div class="product-grid-image">
+                                <a href="/Product/ViewProductDetail">
+                                    <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo11/images/img-7.jpg">
+                                    <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo11/images/img-8.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="javascript:void(0);" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="javascript:void(0);" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                    <li><a href="javascript:void(0);" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                                <a href="javascript:void(0);" class="select-options"><i class="fa fa-arrow-right"></i> Select Options</a>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="/Product/ViewProductDetail">Women's Shirt</a></h3>
+                                <div class="price">$11.00 - $15.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    (function () {
+        //...
+    })();
+    function goBack() {
+        window.history.back();
+    }
+
+</script>
+
